@@ -7,6 +7,7 @@ from wtforms.validators import InputRequired
 ###############################
 class AddRecordForm(FlaskForm):
     bus_kms = FloatField("Bus (Kilometers)", [InputRequired()])
+    bus_co2 = FloatField("Bus (CO2)")
     bus_type = SelectField("Bus (Type of Fuel)",
                            [InputRequired()],
                            choices=[
